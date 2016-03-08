@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.cse.hcmut.mobileappdev.features.home.Main.WidgetMainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <FrameLayout
+        android:id="@+id/featureLayout_MainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="470sp">
+    </FrameLayout>
+
+    <org.honorato.multistatetogglebutton.MultiStateToggleButton
+        android:id="@+id/multiBtnFeature_MainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:entries="@array/tab_main_fragment"/>
+
+</RelativeLayout>
