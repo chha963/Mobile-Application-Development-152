@@ -4,6 +4,42 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorGreen">#00CC00</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_green_dark">@android:color/holo_green_dark</color>
+
+    <color name="menu_item_selected">@color/md_grey_200</color>
+
     <color name="list_background_pressed_color">#992416</color>
     <color name="text_hint_color">#808080</color>
+
+    <color name="my_material_drawer_primary_text">#231e1e</color>
+    <color name="my_material_drawer_section_text">#ffffff</color>
+
+    <color name="my_material_drawer_section_background">#3f3f3f</color>
+
+    <color name="background">@color/md_grey_100</color>
+
+    <color name="capsule_button_background">@color/tab_layout_default_background</color>
+
+    <color name="product_list_left_text">#303e3e</color>
+
+    <color name="tab_layout_default_background">#699d38</color>
+    <color name="tab_layout_another_background">#039be6</color>
+    <color name="tab_layout_text">#ffffff</color>
+
+    <color name="header_main_fragment_description_text">#c8c6bb</color>
+    <color name="header_main_fragment_price_text">#94cc4a</color>
+
+    <color name="content_main_fragment_name_product">#4c5858</color>
+    <color name="content_main_fragment_description_product">#b6b6b6</color>
+    <color name="content_main_fragment_price_product">#9bbc7d</color>
+
+    <color name="button_call_default_product_detail">@color/tab_layout_default_background</color>
+    <color name="button_call_another_product_detail">@color/tab_layout_another_background</color>
+    <color name="button_add_default_bookmark_product_detail">#008f82</color>
+
 </resources>

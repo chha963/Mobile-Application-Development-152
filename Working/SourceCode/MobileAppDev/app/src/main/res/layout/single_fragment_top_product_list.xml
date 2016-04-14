@@ -1,0 +1,52 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:context=".view.features.home.Main.ProductList.horizontalscroll.header.TopProductListMainSingleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView_TopProductListSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_main_fragment_height"
+        android:scaleType="fitXY"/>
+        <!--android:src="@drawable/ic_test_header_1"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginBottom="16sp"
+        android:layout_alignBottom="@id/imageView_TopProductListSingleFragment">
+
+        <TextView
+            android:id="@+id/typeAndNameProduct_TopProductListSingleFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="[MUA]TEN SAN PHAM"/>
+
+        <TextView
+            android:id="@+id/shortDescriptionProduct_TopProductListSingleFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/header_main_fragment_description_text"
+            android:text="Mot doan mo ta ngan ve san pham"
+            android:layout_marginBottom="0dp"/>
+
+        <TextView
+            android:id="@+id/priceProduct_TopProductListSingleFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/header_main_fragment_price_text"
+            android:textStyle="bold"
+            android:text="25000 VND"
+            android:layout_marginBottom="8sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

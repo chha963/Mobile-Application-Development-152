@@ -3,4 +3,61 @@
     <dimen name="activity_horizontal_margin">32dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="search_card_visible_padding_menu_item_mode">4dp</dimen>
+    <dimen name="search_card_default_card_elevation">2dp</dimen>
+
+    <dimen name="search_view_icon_margin_left_and_right">12dp</dimen>
+    <dimen name="search_view_logo_margin_left">16dp</dimen>
+    <dimen name="search_view_horizontal_padding">14dp</dimen>
+    <dimen name="search_view_vertical_padding">12dp</dimen>
+
+    <dimen name="search_view_icon_height_and_width">32dp</dimen>
+
+    <dimen name="search_card_height">36dp</dimen>
+    <dimen name="search_view_height">44dp</dimen>
+
+    <dimen name="search_view_custom_toolbar_height">64dp</dimen>
+
+    <dimen name="search_view_sticky_top_vertical_padding">2dp</dimen>
+
+    <!-- Default app dimensions -->
+    <dimen name="toolbar_height">48dip</dimen>
+    <dimen name="divider_height">1dip</dimen>
+
+    <dimen name="header_main_fragment_height">175dp</dimen>
+    <dimen name="header_main_observable_scroll_view_margin_top">210dp</dimen>
+
+    <dimen name="material_drawer_width">285dp</dimen>
+    <dimen name="material_drawer_header_background_height">175dp</dimen>
+    <dimen name="material_drawer_vertical_padding">20dp</dimen>
+    <dimen name="material_drawer_account_header_text">12sp</dimen>
+
+    <dimen name="tab_layout_height">35dp</dimen>
+    <dimen name="tab_layout_main_indicator_height">4dp</dimen>
+
+    <dimen name="back_button_transparent_action_bar_size">24dp</dimen>
+
+    <dimen name="card_view_product_list_first_item_margin_left">24dp</dimen>
+    <dimen name="card_view_product_list_margin_right">6dp</dimen>
+
+    <dimen name="category_layout_height">45dp</dimen>
+    <dimen name="capsule_button_radius">40dp</dimen>
+
+    <dimen name="product_detail_fragment_margin_left">16dp</dimen>
+    <dimen name="product_detail_fragment_margin_top">16dp</dimen>
+    <dimen name="product_detail_fragment_margin_right">16dp</dimen>
+    <dimen name="product_detail_fragment_avatar_image_size">100dp</dimen>
+
+    <dimen name="product_detail_fragment_btn_addBookmark_width">100dp</dimen>
+    <dimen name="product_detail_fragment_btn_addBookmark_height">22dp</dimen>
+    <dimen name="product_detail_fragment_btn_call_width">70dp</dimen>
+    <dimen name="product_detail_fragment_btn_call_height">22dp</dimen>
+
+    <dimen name="product_detail_fragment_fake_view_bottom_height">50dp</dimen>
+
+    <dimen name="fake_view_height_change_color_layout">100dp</dimen>
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+
 </resources>

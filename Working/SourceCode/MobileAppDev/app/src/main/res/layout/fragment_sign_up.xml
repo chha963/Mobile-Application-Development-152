@@ -6,7 +6,7 @@
               android:divider="@drawable/empty_tall_divider"
               android:orientation="vertical"
               android:showDividers="middle"
-              tools:context=".features.start.SignUp.SignUpFragment">
+              tools:context=".view.features.start.SignUp.SignUpFragment">
 
     <EditText
         android:id="@+id/editTxtUsername_SignUpFragment"

@@ -1,0 +1,216 @@
+package com.cse.hcmut.mobileappdev.view.features.home.Main.ProductList.horizontalscroll.content;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.cse.hcmut.mobileappdev.R;
+import com.cse.hcmut.mobileappdev.controller.MainActivity.MainActivityReceiver;
+import com.cse.hcmut.mobileappdev.models.adapters.SectionListAdapter;
+import com.cse.hcmut.mobileappdev.base.views.fragment.MyBaseSingleFragment;
+import com.cse.hcmut.mobileappdev.models.Product.Product;
+import com.cse.hcmut.mobileappdev.models.Product.ProductLab;
+import com.cse.hcmut.mobileappdev.models.Section.SectionDataMainFragment;
+import com.cse.hcmut.mobileappdev.view.features.home.MainActivity;
+
+import java.util.ArrayList;
+
+import butterknife.Bind;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class ProductListMainSingleFragment extends MyBaseSingleFragment
+                                        implements SectionListAdapter.OnClickSection{
+
+    // ---------------------------------------------------------------------------------------------
+    // TYPES
+    // ---------------------------------------------------------------------------------------------
+
+    public enum SectionItem {
+
+        SECTION_BUY("MUA"),
+
+        SECTION_SELL("BÁN");
+
+        private String mLabel;
+
+        SectionItem(String label) {
+            mLabel = label;
+        }
+
+        public String getTitle() {
+            return mLabel;
+        }
+
+        public int getPosition() {
+            return this.ordinal();
+        }
+
+    }
+
+    // ---------------------------------------------------------------------------------------------
+    // ABSTRACT METHODS
+    // ---------------------------------------------------------------------------------------------
+
+    // ---------------------------------------------------------------------------------------------
+    // STATIC FIELDS
+    // ---------------------------------------------------------------------------------------------
+
+    // ---------------------------------------------------------------------------------------------
+    // STATIC METHODS
+    // ---------------------------------------------------------------------------------------------
+
+    public static ProductListMainSingleFragment newInstance() {
+        
+        Bundle args = new Bundle();
+        
+        ProductListMainSingleFragment fragment = new ProductListMainSingleFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+    
+    // ---------------------------------------------------------------------------------------------
+    // FIELDS
+    // ---------------------------------------------------------------------------------------------
+
+    ArrayList<SectionDataMainFragment> mSectionFilteredProductList = null;
+
+    ArrayList<Integer> mHorizontalScrollState = null;
+
+    @Bind(R.id.recyclerViewVertical_ProductListMainSingleFragment)
+    RecyclerView mVerticalSectionRecyclerView = null;
+
+    SectionListAdapter mSectionListAdapter = null;
+
+    private MainActivityReceiver.OnReceiverProductListMainSingleFragment mSectionClickCallback;
+
+    // ---------------------------------------------------------------------------------------------
+    // CONSTRUCTORS
+    // ---------------------------------------------------------------------------------------------
+
+    public ProductListMainSingleFragment() {
+        // Required empty public constructor
+    }
+
+    // ---------------------------------------------------------------------------------------------
+    // IMPLEMENT METHODS (METHODS OVERRIDE FROM ABSTRACT PARENT CLASS + FROM IMPLEMENTS)
+    // ---------------------------------------------------------------------------------------------
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.single_fragment_main_product_list;
+    }
+
+    @Override
+    public void onClickSection(int clickPosition) {
+        mSectionClickCallback.onReceiveProductListMainSectionClickIndex(clickPosition);
+    }
+
+    // ---------------------------------------------------------------------------------------------
+    // METHODS
+    // ---------------------------------------------------------------------------------------------
+
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        if (context instanceof MainActivity) {
+            try {
+                mSectionClickCallback = (MainActivity) context;
+            } catch (ClassCastException e) {
+                Log.d("ProductListMainFragment",
+                        context.toString() + " must implement on ProductListMainFragment");
+            }
+        }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View rootView = super.onCreateView(inflater, container, savedInstanceState);
+        Context context = getActivity();
+
+        if (rootView != null) {
+            setupWidgets(context);
+        }
+
+        return rootView;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        mSectionListAdapter.setOnClickSectionCallback(this);
+    }
+
+    private void setupWidgets(Context context) {
+        setupAdapter(context);
+
+        LinearLayoutManager layoutRecyclerView
+                = new LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false);
+
+        mVerticalSectionRecyclerView.setHasFixedSize(true);
+        mVerticalSectionRecyclerView.setLayoutManager(
+                layoutRecyclerView
+        );
+
+        mVerticalSectionRecyclerView.setAdapter(mSectionListAdapter);
+        mVerticalSectionRecyclerView.setFocusable(false);
+    }
+
+    private void setupAdapter(Context context) {
+        mSectionFilteredProductList = createDataProductBySection(context);
+        mSectionListAdapter = new SectionListAdapter(context, mSectionFilteredProductList);
+
+        if (mHorizontalScrollState != null) {
+            mSectionListAdapter.setHorizontalScrollStateList(mHorizontalScrollState);
+        }
+    }
+
+    private ArrayList<SectionDataMainFragment> createDataProductBySection(Context context) {
+
+        int numberOfSection = SectionItem.values().length;
+
+        ArrayList<SectionDataMainFragment> sectionList = new ArrayList<>();
+
+        for (int i = 0; i < numberOfSection; i++) {
+            String sectionTitle = SectionItem.values()[i].getTitle();
+
+            ArrayList<Product> listProductFiltered =
+                    ProductLab.get(context).getProductListFilteredByType(i);
+
+            SectionDataMainFragment singleItem =
+                    new SectionDataMainFragment(sectionTitle, listProductFiltered);
+
+            sectionList.add(singleItem);
+        }
+
+        return sectionList;
+    }
+
+    // ---------------------------------------------------------------------------------------------
+    // GETTERS / SETTERS
+    // ---------------------------------------------------------------------------------------------
+
+    public ArrayList<Integer> getHorizontalScrollState() {
+        ArrayList<Integer> currentHorizontalScrollStateList = null;
+        if (mSectionListAdapter != null) {
+            currentHorizontalScrollStateList =
+                    mSectionListAdapter.getCurrentHorizontalScrollStateList();
+        }
+        return currentHorizontalScrollStateList;
+    }
+
+    public void setHorizontalScrollStates(ArrayList<Integer> listScrollState) {
+        mHorizontalScrollState = listScrollState;
+    }
+}

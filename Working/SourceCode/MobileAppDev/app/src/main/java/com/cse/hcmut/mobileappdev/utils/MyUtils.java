@@ -21,4 +21,34 @@ public class MyUtils {
         }
         return hasImage;
     }
+
+    public static String addSeparatorEveryThreeCharacterFromLast(String numberString, String separator){
+        StringBuilder strB = new StringBuilder();
+        strB.append(numberString);
+        int Three = 0;
+
+        for(int i=numberString.length();i>0;i--){
+            Three++;
+            if(Three == 3){
+                strB.insert(i-1, separator);
+                Three = 0;
+            }
+        }
+        return strB.toString();
+    }// end Spacer()
+
+    public static String addSeparatorEveryThreeCharacterFromBegin(String numberString, String separator){
+        StringBuilder strB = new StringBuilder();
+        strB.append(numberString);
+        int Three = 0;
+        int length = numberString.length();
+        for(int i = 0; i <= length; i++){
+            Three++;
+            if(Three == 3){
+                strB.insert(i+1, separator);
+                Three = 0;
+            }
+        }
+        return strB.toString();
+    }// end Spacer()
 }

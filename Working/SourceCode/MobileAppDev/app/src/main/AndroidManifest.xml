@@ -7,7 +7,6 @@
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality. 
     -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     // Use OpenGL ES 2.0
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -21,15 +20,16 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSSERVICES"/>
 
     <application
+        android:name=".base.others.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
+        android:persistent="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".features.start.StartActivity"
+            android:name=".view.features.start.StartActivity"
             android:label="@string/title_activity_start"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -47,16 +47,18 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key"/>
+        <meta-data
+            android:name="com.cse.hcmut.mobileappdev.base.others.MyGlideModule"
+            android:value="GlideModule"/>
 
         <activity
-            android:name=".features.home.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".view.features.home.MainActivity"
+            android:theme="@style/AppTheme">
             android:label="@string/title_activity_main">
         </activity>
-        <activity
-            android:name=".activity.Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".view.features.home.Main.ProductDetail.acitivity.AvatarImageActivity">
+        </activity>
+        <activity android:name=".view.features.home.Main.ProductDetail.acitivity.GalleryViewPagerActivity">
         </activity>
     </application>
 
