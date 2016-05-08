@@ -8,6 +8,7 @@ class BaseResponse
     const LOGIN_FAIL = 1;
     const ACCOUNT_EXISTED = 2;
     const LOGIN_EXPIRED = 3;
+    const ADDRESS_FORMAT = 4;
 
 	/**
 	 * @var int

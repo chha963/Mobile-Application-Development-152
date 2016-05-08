@@ -9,7 +9,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Response;
 use Illuminate\Support\Facades\DB;
-use Tymon\JWTAuth\Exceptions\TokenExpiredException;
 use App\User;
 use Validator;
 
@@ -43,21 +42,32 @@ class AuthController extends Controller {
      */
     public function register(Request $request)
     {
-        $credentials = $request->only('familyandsurname', 'firstname', 'name', 'password', 'email', 'phone', 'street', 'ward', 'district', 'city', 'birthday');
+        $credentials = $request->only('last_name', 'first_name', 'name', 'password', 'email', 'phone', 'address', 'birthday');
 		
 		$rules = array(
 			'email' => 'unique:users,email',
-			'name' => 'unique:users,name'
+			'name' => 'unique:users,name',
 		);
 		
 		$validator = Validator::make($credentials, $rules);
-		
-		if ($validator->fails()) 
-		{
-			return response()->json((new Response\AccountExistedResponse([], 'User already exists.'))->ToJsonArray(), 200);
-		}
+
+        if ($validator->fails())
+        {
+            return response()->json((new Response\AccountExistedResponse([], 'User already exists.'))->ToJsonArray(), 200);
+        }
 		else
 		{
+            $latlong = LocationController::Get_LatLng_From_Google_Maps($request->input('address'));
+            if(empty($latlong))
+            {
+                return response()->json((new Response\WrongAddressFormatResponse([], 'Wrong Address.'))->ToJsonArray(), 200);
+            }
+            else
+            {
+                $credentials['latitude'] = $latlong['latitude'];
+                $credentials['longitude'] = $latlong['longitude'];
+            }
+
 			try {
 				$user = User::create($credentials);
 			}
@@ -89,14 +99,14 @@ class AuthController extends Controller {
         $credentials = $request->only('name', 'password');
         try {
             if (!$token = JWTAuth::attempt($credentials)) {
-                return response()->json((new Response\LoginFailResponse([], 'Login Fail. Please Check Username & PassWord'))->ToJsonArray(), 200);
+                return response()->json((new Response\LoginFailResponse([], 'Login Fail. Please Check Username or PassWord'))->ToJsonArray(), 200);
             }
         } catch (JWTException $e) {
             return response()->json((new Response\LoginFailResponse([], 'Something Went Wrong.Please Try Again'))->ToJsonArray(), 200);
         }
 
-        $users = DB::select('select id, avatar from users where name = ?', [$request->input('name')])[0];
-        DB::update('update users set remember_token = :token where id = :id', ['token' => $token, 'id' => $users->id]);
+        $users = DB::select('select user_id, avatar from users where name = ?', [$request->input('name')])[0];
+        DB::update('update users set remember_token = :token where user_id = :id', ['token' => $token, 'id' => $users->user_id]);
 
         return response()->json((new Response\SuccessResponse(
             array(

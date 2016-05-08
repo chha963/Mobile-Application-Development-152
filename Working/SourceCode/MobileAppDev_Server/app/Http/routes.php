@@ -18,5 +18,5 @@ Route::get('/', function () {
 Route::group(['prefix' => 'api'], function() {
     Route::post('login', 'Api\AuthController@login');
     Route::post('register', 'Api\AuthController@register');
-    Route::get('cityinfo', 'Api\HelperController@cityInfo');
+    Route::get('cityInfo', 'Api\LocationController@cityInfo');
 });

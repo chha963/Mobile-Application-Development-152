@@ -30,5 +30,4 @@ class HelperController extends Controller {
 
         return response()->json((new Response\SuccessResponse($resultSet, 'Information Fetch successful'))->ToJsonArray(), 200);
     }
-
 } 
