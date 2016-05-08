@@ -28,34 +28,53 @@
       <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.8076923" vertical-offset="1017" max-vertical-offset="2142">
-              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+            <state vertical-scroll-proportion="-7.3461537" vertical-offset="1441" max-vertical-offset="2193">
+              <caret line="102" column="22" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
               <folding>
                 <element signature="e#44#56#0#PHP" expanded="true" />
-                <marker date="1462676377802" expanded="true" signature="3218:3266" placeholder="select user_..users..." />
-                <marker date="1462676377802" expanded="true" signature="3320:3380" placeholder="update users..." />
+                <element signature="e#2457#2652#0#PHP" expanded="false" />
+                <marker date="1462685426893" expanded="true" signature="2736:2780" placeholder="select * fro..users..." />
+                <marker date="1462685426893" expanded="true" signature="2736:2977" placeholder="select * fro..users..." />
+                <marker date="1462685426893" expanded="true" signature="3446:3489" placeholder="select id, a..users..." />
+                <marker date="1462685426893" expanded="true" signature="3543:3598" placeholder="update users..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/LocationController.php">
+      <file leaf-file-name="JWTAuth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/JWTAuth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.653846" vertical-offset="18" max-vertical-offset="850">
-              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+            <state vertical-scroll-proportion="-2.7592592" vertical-offset="1942" max-vertical-offset="5899">
+              <caret line="123" column="43" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
               <folding>
-                <element signature="e#128#140#0#PHP" expanded="true" />
+                <element signature="e#7#219#0#PHP" expanded="true" />
+                <element signature="e#247#275#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdsController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6202749" vertical-offset="64" max-vertical-offset="646">
+              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+              <folding>
+                <element signature="e#129#165#0#PHP" expanded="true" />
+                <marker date="1462685029632" expanded="true" signature="626:895" placeholder="SELECT icon,..ads..." />
+                <marker date="1462685029632" expanded="true" signature="729:783" placeholder="SELECT RAND(..." />
+                <marker date="1462685029632" expanded="true" signature="746:775" placeholder="SELECT MAX(a..ads..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47466666" vertical-offset="77" max-vertical-offset="476">
-              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="510">
+              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
               <folding>
                 <element signature="e#7#392#0#PHP" expanded="true" />
               </folding>
@@ -83,8 +102,10 @@
         <option value="$PROJECT_DIR$/app/Http/helper.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Helper.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/LocationController.php" />
+        <option value="$PROJECT_DIR$/app/Ads.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AdsController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" />
       </list>
     </option>
@@ -158,7 +179,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileAppDev_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tymon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jwt-auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileAppDev_Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tymon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jwt-auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -173,10 +242,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Response" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,7 +374,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3254717" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3254717" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -340,7 +405,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -351,18 +416,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#44#56#0#PHP" expanded="true" />
-            <marker date="1462676377802" expanded="true" signature="3218:3266" placeholder="select user_..users..." />
-            <marker date="1462676377802" expanded="true" signature="3320:3380" placeholder="update users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/HelperController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="561">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <element signature="e#129#141#0#PHP" expanded="true" />
+            <element signature="e#2457#2652#0#PHP" expanded="false" />
+            <marker date="1462685426893" expanded="true" signature="2736:2780" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="2736:2977" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="3446:3489" placeholder="select id, a..users..." />
+            <marker date="1462685426893" expanded="true" signature="3543:3598" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -391,8 +449,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#44#56#0#PHP" expanded="true" />
-            <marker date="1462676377802" expanded="true" signature="3218:3266" placeholder="select user_..users..." />
-            <marker date="1462676377802" expanded="true" signature="3320:3380" placeholder="update users..." />
+            <element signature="e#2457#2652#0#PHP" expanded="false" />
+            <marker date="1462685426893" expanded="true" signature="2736:2780" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="2736:2977" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="3446:3489" placeholder="select id, a..users..." />
+            <marker date="1462685426893" expanded="true" signature="3543:3598" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -413,8 +474,11 @@
           <caret line="54" column="5" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
           <folding>
             <element signature="e#44#56#0#PHP" expanded="true" />
-            <marker date="1462676377802" expanded="true" signature="3218:3266" placeholder="select user_..users..." />
-            <marker date="1462676377802" expanded="true" signature="3320:3380" placeholder="update users..." />
+            <element signature="e#2457#2652#0#PHP" expanded="false" />
+            <marker date="1462685426893" expanded="true" signature="2736:2780" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="2736:2977" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="3446:3489" placeholder="select id, a..users..." />
+            <marker date="1462685426893" expanded="true" signature="3543:3598" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -429,24 +493,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/HelperController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#129#141#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1785">
           <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
           <folding>
             <element signature="e#44#56#0#PHP" expanded="true" />
-            <marker date="1462676377802" expanded="true" signature="3218:3266" placeholder="select user_..users..." />
-            <marker date="1462676377802" expanded="true" signature="3320:3380" placeholder="update users..." />
+            <element signature="e#2457#2652#0#PHP" expanded="false" />
+            <marker date="1462685426893" expanded="true" signature="2736:2780" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="2736:2977" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="3446:3489" placeholder="select id, a..users..." />
+            <marker date="1462685426893" expanded="true" signature="3543:3598" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -477,8 +534,11 @@
           <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
           <folding>
             <element signature="e#44#56#0#PHP" expanded="true" />
-            <marker date="1462676377802" expanded="true" signature="3218:3266" placeholder="select user_..users..." />
-            <marker date="1462676377802" expanded="true" signature="3320:3380" placeholder="update users..." />
+            <element signature="e#2457#2652#0#PHP" expanded="false" />
+            <marker date="1462685426893" expanded="true" signature="2736:2780" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="2736:2977" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="3446:3489" placeholder="select id, a..users..." />
+            <marker date="1462685426893" expanded="true" signature="3543:3598" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -533,8 +593,11 @@
           <caret line="62" column="104" selection-start-line="62" selection-start-column="104" selection-end-line="62" selection-end-column="104" />
           <folding>
             <element signature="e#44#56#0#PHP" expanded="true" />
-            <marker date="1462676377802" expanded="true" signature="3218:3266" placeholder="select user_..users..." />
-            <marker date="1462676377802" expanded="true" signature="3320:3380" placeholder="update users..." />
+            <element signature="e#2457#2652#0#PHP" expanded="false" />
+            <marker date="1462685426893" expanded="true" signature="2736:2780" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="2736:2977" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="3446:3489" placeholder="select id, a..users..." />
+            <marker date="1462685426893" expanded="true" signature="3543:3598" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -582,8 +645,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#44#56#0#PHP" expanded="true" />
-            <marker date="1462676377802" expanded="true" signature="3218:3266" placeholder="select user_..users..." />
-            <marker date="1462676377802" expanded="true" signature="3320:3380" placeholder="update users..." />
+            <element signature="e#2457#2652#0#PHP" expanded="false" />
+            <marker date="1462685426893" expanded="true" signature="2736:2780" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="2736:2977" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="3446:3489" placeholder="select id, a..users..." />
+            <marker date="1462685426893" expanded="true" signature="3543:3598" placeholder="update users..." />
           </folding>
         </state>
       </provider>
@@ -614,13 +680,6 @@
         <state vertical-scroll-proportion="0.24329159" vertical-offset="0" max-vertical-offset="559">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/JWTAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37745973" vertical-offset="3070" max-vertical-offset="5729">
-          <caret line="203" column="37" selection-start-line="203" selection-start-column="22" selection-end-line="203" selection-end-column="93" />
         </state>
       </provider>
     </entry>
@@ -675,54 +734,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10277778" vertical-offset="337" max-vertical-offset="850">
-          <caret line="22" column="69" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="69" />
-          <folding>
-            <element signature="e#23#32#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/HelperController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20375335" vertical-offset="9" max-vertical-offset="561">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="e#129#141#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.8076923" vertical-offset="1017" max-vertical-offset="2142">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding>
-            <element signature="e#44#56#0#PHP" expanded="true" />
-            <marker date="1462676377802" expanded="true" signature="3218:3266" placeholder="select user_..users..." />
-            <marker date="1462676377802" expanded="true" signature="3320:3380" placeholder="update users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/LocationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.653846" vertical-offset="18" max-vertical-offset="850">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        <state vertical-scroll-proportion="-2.5769231" vertical-offset="18" max-vertical-offset="850">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="e#128#140#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="408" max-vertical-offset="850">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <folding>
+            <element signature="e#23#32#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/Providers/Auth/AuthInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38933334" vertical-offset="228" max-vertical-offset="629">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/Payload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35466668" vertical-offset="921" max-vertical-offset="2924">
+          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/JWTAuth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7592592" vertical-offset="1942" max-vertical-offset="5899">
+          <caret line="123" column="43" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
+          <folding>
+            <element signature="e#7#219#0#PHP" expanded="true" />
+            <element signature="e#247#275#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47466666" vertical-offset="77" max-vertical-offset="476">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="510">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
           <folding>
             <element signature="e#7#392#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3461537" vertical-offset="1441" max-vertical-offset="2193">
+          <caret line="102" column="22" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
+          <folding>
+            <element signature="e#44#56#0#PHP" expanded="true" />
+            <element signature="e#2457#2652#0#PHP" expanded="false" />
+            <marker date="1462685426893" expanded="true" signature="2736:2780" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="2736:2977" placeholder="select * fro..users..." />
+            <marker date="1462685426893" expanded="true" signature="3446:3489" placeholder="select id, a..users..." />
+            <marker date="1462685426893" expanded="true" signature="3543:3598" placeholder="update users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/AdsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6202749" vertical-offset="64" max-vertical-offset="646">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="e#129#165#0#PHP" expanded="true" />
+            <marker date="1462685029632" expanded="true" signature="626:895" placeholder="SELECT icon,..ads..." />
+            <marker date="1462685029632" expanded="true" signature="729:783" placeholder="SELECT RAND(..." />
+            <marker date="1462685029632" expanded="true" signature="746:775" placeholder="SELECT MAX(a..ads..." />
           </folding>
         </state>
       </provider>

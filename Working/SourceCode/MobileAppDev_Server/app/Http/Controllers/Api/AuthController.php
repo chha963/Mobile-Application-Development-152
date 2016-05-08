@@ -94,6 +94,15 @@ class AuthController extends Controller {
         JWTAuth::invalidate($request->input('token'));
     }
 
+    public static function getAuthUser($token)
+    {
+        $users = DB::select('select * from users where remember_token = ?', [$token]);
+
+        if(count($users) != 1)
+            return false;
+        return $users;
+    }
+
     private function normalLogin(Request $request)
     {
         $credentials = $request->only('name', 'password');
@@ -105,8 +114,8 @@ class AuthController extends Controller {
             return response()->json((new Response\LoginFailResponse([], 'Something Went Wrong.Please Try Again'))->ToJsonArray(), 200);
         }
 
-        $users = DB::select('select user_id, avatar from users where name = ?', [$request->input('name')])[0];
-        DB::update('update users set remember_token = :token where user_id = :id', ['token' => $token, 'id' => $users->user_id]);
+        $users = DB::select('select id, avatar from users where name = ?', [$request->input('name')])[0];
+        DB::update('update users set remember_token = :token where id = :id', ['token' => $token, 'id' => $users->id]);
 
         return response()->json((new Response\SuccessResponse(
             array(

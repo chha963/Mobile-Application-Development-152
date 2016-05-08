@@ -19,4 +19,6 @@ Route::group(['prefix' => 'api'], function() {
     Route::post('login', 'Api\AuthController@login');
     Route::post('register', 'Api\AuthController@register');
     Route::get('cityInfo', 'Api\LocationController@cityInfo');
+
+    Route::post('headerBanner', 'Api\AdsController@getHeaderBanner');
 });
