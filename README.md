@@ -16,5 +16,5 @@ See details in /Exercicses
 # Project
 ### Project Name: GoVi App
 This application is use for who want to trade items likes ChoTot.</br>
-Current Arrea Supported: Ho Chi Minh City, Viet Nam.
+Current Area Support: Ho Chi Minh City, Viet Nam.
 
