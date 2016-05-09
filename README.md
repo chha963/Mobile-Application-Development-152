@@ -6,7 +6,7 @@ Students from Ho Chi Minh City University of Technology
 |-----|------------------|------------| -----------------------------------------|
 | 1   | Nguyen Nhu Dinh  | 51200780   | Frontend Dev (Android)                   |
 | 2   | Nguyen Le Minh   | 51202149   | Designer                                 |
-| 3   | Truong Trieu Hai | 51200978   | Idea + Requirement Specification         |
+| 3   | Truong Trieu Hai | 51200978   | Idea + Mockup + Requirement Specification|
 | 4   | Mach Chi Da      | 51200659   | Backend Dev  (Server + Web services)     |
 | 5   | Pham Phuong Uyen | 51204447   | Backend Dev  (Server + Web services)     |
 
@@ -29,6 +29,14 @@ Current Area Support: Ho Chi Minh City, Viet Nam.
 * Server-side: Hostinger.vn 
 * Database: MySQL 
 * Framework: Laravel 
+
+### History Version
+
+#### &nbsp; 1.0
+* Web-Services: SignIn & SignUp
+* Crop Image, Snappy Recycler View
+* Navigation Drawer
+* Init Google Map in Fragment
 
 ### Note
 ##### Offline Account
