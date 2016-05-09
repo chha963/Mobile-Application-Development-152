@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <declare-styleable name="MyMaterialDrawer" parent="MaterialDrawer">
-        <attr name="my_material_drawer_section_text" format="color|reference" />
-        <attr name="my_material_drawer_section_background" format="color|reference" />
-    </declare-styleable>
-
-</resources>
