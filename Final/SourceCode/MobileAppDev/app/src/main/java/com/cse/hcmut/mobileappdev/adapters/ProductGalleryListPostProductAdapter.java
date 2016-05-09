@@ -56,6 +56,9 @@ public class ProductGalleryListPostProductAdapter extends RecyclerView.Adapter {
 
     OnItemClickListener mItemClickListener;
 
+    int mNumberOfItemsNotNull = 0;
+    int mItemCount = 0;
+
     // ---------------------------------------------------------------------------------------------
     // CONSTRUCTORS
     // ---------------------------------------------------------------------------------------------
@@ -114,24 +117,36 @@ public class ProductGalleryListPostProductAdapter extends RecyclerView.Adapter {
 
     @Override
     public int getItemCount() {
-        return NUMBER_OF_IMAGE_LIMIT;
+
+        int realSize = 0;
+
+        if (mBitmapsList != null) {
+            if (mBitmapsList.contains(null)) { // Gallery list was filled with null => find last null
+                realSize = mBitmapsList.lastIndexOf(null) + 1;
+            } else { // In case null was not filled (remove), we get size of bit map
+                realSize = mBitmapsList.size();
+            }
+        }
+
+        mNumberOfItemsNotNull = realSize;
+        // We add 1 element place holder after image
+        realSize = (realSize >= NUMBER_OF_IMAGE_LIMIT) ? NUMBER_OF_IMAGE_LIMIT : realSize + 1;
+        // update item count global variable
+        mItemCount = realSize;
+
+        return realSize;
     }
 
 
     @Override
     public int getItemViewType(int position) {
-        //Default is place holder
+
         int type = TYPE_ROUND_IMAGE_HORIZONTAL;
-        int realSize = 0;
-        if (mBitmapsList != null) {
-            if (mBitmapsList.contains(null)) {
-                realSize = mBitmapsList.lastIndexOf(null) + 1;
-            } else {
-                realSize = mBitmapsList.size();
+        // Place holder not appear if it's last item limit (number of item = LIMIT SIZE)
+        if (mNumberOfItemsNotNull != mItemCount) {
+            if (position == (mItemCount - 1)) {
+                type = TYPE_ROUND_IMAGE_HORIZONTAL_PLACE_HOLDER;
             }
-        }
-        if (position >= realSize) {
-            type = TYPE_ROUND_IMAGE_HORIZONTAL_PLACE_HOLDER;
         }
         return type;
     }
