@@ -9,6 +9,7 @@ class BaseResponse
     const ACCOUNT_EXISTED = 2;
     const LOGIN_EXPIRED = 3;
     const ADDRESS_FORMAT = 4;
+    const INVALID_IMAGE = 5;
 
 	/**
 	 * @var int

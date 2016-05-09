@@ -100,7 +100,7 @@ class AuthController extends Controller {
 
         if(count($users) != 1)
             return false;
-        return $users;
+        return $users[0];
     }
 
     private function normalLogin(Request $request)
