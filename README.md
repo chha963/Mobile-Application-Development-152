@@ -11,15 +11,27 @@ Students from Ho Chi Minh City University of Technology
 | 5   | Pham Phuong Uyen | 51204447   | Backend Dev  (Server + Web services)     |
 
 # Exercises
-See details in /Exercicses
+See details in /Exercises
 
 # Project
 ### Project Name: GoVi App
 This application uses for who want to trade items, likes ChoTot Application.</br>
 Current Area Support: Ho Chi Minh City, Viet Nam.
 
+### Preview
+<img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/0_zpsyty50f6k.png" width="210">
+<img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/1_zpspaxbfhlp.png" width="210">
+<img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/3_zpsnjgkduyi.png" width="210">
+<img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/4_zpsvkou5p2p.png" width="210">
+
 ### Environment
 * Client-side: Android 
 * Server-side: Hostinger.vn 
 * Database: MySQL 
 * Framework: Laravel 
+
+### Note
+##### Offline Account
+Use this to login if host got problem.</br>
+>**Username:**admin</br>
+>**Password:**admin</br>
