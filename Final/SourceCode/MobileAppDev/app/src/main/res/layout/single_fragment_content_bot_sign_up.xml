@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/sign_up_fragment_horizontal_margin"
+    android:layout_marginLeft="@dimen/sign_up_fragment_horizontal_margin"
+    android:layout_marginRight="@dimen/sign_up_fragment_horizontal_margin"
+    android:layout_marginStart="@dimen/sign_up_fragment_horizontal_margin"
+    android:layout_marginTop="@dimen/sign_up_fragment_vertical_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout android:id="@+id/signUpLinearLayout_SignUpFragment"
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/nameLayout_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/lastNameEditText_ContentSignUpSingleFragment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1.9"
+                android:background="@color/sign_up_edit_text_background"
+                android:gravity="center_vertical"
+                android:hint="@string/edit_txt_family_and_sur_name_hint_sign_up"
+                android:inputType="textPersonName"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/sign_up_edit_text_hint"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/firstNameEditText_ContentSignUpSingleFragment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:background="@color/sign_up_edit_text_background"
+                android:gravity="center_vertical"
+                android:hint="@string/edit_txt_first_name_hint_sign_up"
+                android:inputType="textPersonName"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/sign_up_edit_text_hint"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usernameLayout_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/sign_up_fragment_edit_text_height"
+                android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+                android:background="@color/sign_up_edit_text_background">
+
+                <ImageView
+                    android:id="@+id/usernameImageView_ContentBotSignUpSingleFragment"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_username_sign_in"/>
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/usernameEditText_ContentSignUpSingleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/sign_up_edit_text_background"
+                android:gravity="center_vertical"
+                android:hint="@string/edit_txt_username_hint_sign_up"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/sign_up_edit_text_hint"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passwordLayout_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/sign_up_fragment_edit_text_height"
+                android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+                android:background="@color/sign_up_edit_text_background">
+
+                <ImageView
+                    android:id="@+id/passwordImageView_ContentBotSignUpSingleFragment"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_password_sign_in"/>
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/passwordEditText_ContentSignUpSingleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/sign_up_edit_text_background"
+                android:gravity="center_vertical"
+                android:hint="@string/edit_txt_password_hint_sign_up"
+                android:inputType="textPassword"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/sign_up_edit_text_hint"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rePasswordLayout_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/sign_up_fragment_edit_text_height"
+                android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+                android:background="@color/sign_up_edit_text_background">
+
+                <ImageView
+                    android:id="@+id/rePasswordImageView_ContentBotSignUpSingleFragment"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_password_sign_in"/>
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/rePasswordEditText_ContentSignUpSingleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/sign_up_edit_text_background"
+                android:gravity="center_vertical"
+                android:hint="@string/edit_txt_re_password_hint_sign_up"
+                android:inputType="textPassword"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/sign_up_edit_text_hint"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emailLayout_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/sign_up_fragment_edit_text_height"
+                android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+                android:background="@color/sign_up_edit_text_background">
+
+                <ImageView
+                    android:id="@+id/emailImageView_ContentSignUpSingleFragment"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_email"/>
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/emailEditText_ContentSignUpSingleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/sign_up_edit_text_background"
+                android:gravity="center_vertical"
+                android:hint="@string/edit_txt_email_hint_sign_up"
+                android:inputType="textEmailAddress"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/sign_up_edit_text_hint"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phoneNumberLayout_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/sign_up_fragment_edit_text_height"
+                android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+                android:background="@color/sign_up_edit_text_background">
+
+                <ImageView
+                    android:id="@+id/phoneNumberImageView_ContentSignUpSingleFragment"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_phone_number"/>
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/phoneNumberEditText_ContentSignUpSingleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/sign_up_edit_text_background"
+                android:gravity="center_vertical"
+                android:hint="@string/edit_txt_phone_number_hint_sign_up"
+                android:inputType="phone"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/sign_up_edit_text_hint"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addressTitleLayout_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/addressTitleTextView_ContentSignUpSingleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/txt_view_address_title_sign_up"
+                android:textColor="@color/tab_layout_default_green_background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addressStreetWardLayout_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/sign_up_fragment_edit_text_height"
+                android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+                android:background="@color/sign_up_edit_text_background">
+
+                <ImageView
+                    android:id="@+id/addressStreetWardImageView_ContentSignUpSingleFragment"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_address"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/addressStreetEditText_ContentSignUpSingleFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1.8"
+                    android:background="@color/sign_up_edit_text_background"
+                    android:gravity="center_vertical"
+                    android:hint="@string/edit_txt_address_street_hint_sign_up"
+                    android:paddingEnd="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingStart="12dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/sign_up_edit_text_hint"
+                    android:textSize="12sp"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2">
+
+                    <Spinner
+                        android:id="@+id/addressWardSpinner_ContentSignUpSingleFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@color/sign_up_edit_text_background"
+                        android:cursorVisible="false"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_arrow_down"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addressDistrictProvinceCityLayout_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2">
+
+                <Spinner
+                    android:id="@+id/addressDistrictSpinner_ContentSignUpSingleFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/sign_up_edit_text_background"
+                    android:cursorVisible="false"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_arrow_down"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8">
+
+                <EditText
+                    android:id="@+id/addressProvinceCityEditText_ContentSignUpSingleFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@color/sign_up_edit_text_background"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingStart="12dp"
+                    android:singleLine="true"
+                    android:text="TP.Hồ Chí Minh"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <!--<Spinner-->
+                <!--android:id="@+id/addressProvinceCitySpinner_ContentSignUpSingleFragment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="4dp"-->
+                <!--android:layout_marginStart="4dp"-->
+                <!--android:background="@color/sign_up_edit_text_background"-->
+                <!--android:cursorVisible="false"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:singleLine="true"-->
+                <!--android:spinnerMode="dropdown"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="12sp"/>-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="8dp"-->
+                <!--android:layout_height="8dp"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:src="@drawable/ic_arrow_down"/>-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/birthDateTitleLayout_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/birthDateTitleTextView_ContentSignUpSingleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/txt_view_birthday_title_sign_up"
+                android:textColor="@color/tab_layout_default_green_background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/birthDateLayout_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/sign_up_fragment_edit_text_height"
+                android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+                android:background="@color/sign_up_edit_text_background">
+
+                <ImageView
+                    android:id="@+id/birthDateImageView_ContentSignUpSingleFragment"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_calendar"/>
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/birthDateEditText_ContentSignUpSingleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/sign_up_edit_text_background"
+                android:cursorVisible="false"
+                android:gravity="center_vertical"
+                android:hint="@string/edit_txt_birth_date_hint_sign_up"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/sign_up_edit_text_hint"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/policyLayout_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_policy_layout_height"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtViewNoteAbovePolicy_ContentSignUpSingleFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/txt_view_note_above_policy_sign_up"
+                android:textColor="@color/sign_up_edit_text_hint"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/txtViewPolicy_ContentSignUpSingleFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:text="@string/txt_view_policy_sign_up"
+                android:textColor="@color/tab_layout_default_green_background"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSignUp_ContentSignUpSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_up_fragment_edit_text_height"
+            android:background="@drawable/gradient_btn_sign_in"
+            android:gravity="center"
+            android:hint="@string/btn_sign_up_hint"
+            android:textColorHint="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtViewSignIn_ContentSignUpSingleFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="?android:selectableItemBackground"
+        android:paddingBottom="6dp"
+        android:text="@string/txt_view_sign_in_now_hint"
+        android:textColor="@color/tab_layout_default_green_background"/>
+
+    <TextView
+        android:id="@+id/txtViewNoteSignIn_ContentSignUpSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txtViewSignIn_ContentSignUpSingleFragment"
+        android:gravity="end"
+        android:text="@string/txt_view_note_sign_in_hint"
+        android:textColor="@color/sign_up_edit_text_hint"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

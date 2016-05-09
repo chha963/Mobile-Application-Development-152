@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".view.features.home.main.productlist.horizontalscroll.header.HeaderProductListContainerMainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.cse.hcmut.mobileappdev.base.widgets.viewpager.MyViewPager
+        android:id="@+id/viewPager_HeaderProductListMainSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/circleIndicator_HeaderProductListMainSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@id/viewPager_HeaderProductListMainSingleFragment"
+        android:paddingTop="4dp"/>
+
+</RelativeLayout>

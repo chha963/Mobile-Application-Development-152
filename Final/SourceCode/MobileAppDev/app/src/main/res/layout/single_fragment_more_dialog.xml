@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingEnd="24dp"
+              android:paddingLeft="24dp"
+              android:paddingRight="24dp"
+              android:paddingStart="24dp"
+              android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout_MoreDialogSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/txtViewProductNameTitle_MoreDialogSingleFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btnClose_MoreDialogSingeFragment"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:text="ĐÓNG"
+            android:textColor="@color/tab_layout_default_green_background"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtViewBriefDescription_MoreDialogSingleFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="@color/product_list_left_text"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:id="@+id/articleList_MoreDialogSingleFragment"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

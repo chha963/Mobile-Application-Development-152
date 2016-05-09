@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.cse.hcmut.mobileappdev.base.widgets.recyclerview.MySnappyRecyclerView
+        android:id="@+id/recyclerViewHorizontal_ContentBottomProductListDetailSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/product_detail_fragment_margin_top"
+        android:scrollbars="none"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/product_detail_fragment_margin_right"
+        android:layout_marginLeft="@dimen/product_detail_fragment_margin_left"
+        android:layout_marginRight="@dimen/product_detail_fragment_margin_right"
+        android:layout_marginStart="@dimen/product_detail_fragment_margin_left"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtViewInformationSection_ContentBottomProductDetailSingleFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_view_information_product_detail_fragment_text"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_smartphone"/>
+
+            <TextView
+                android:id="@+id/txtViewPhoneNumber_ContentBottomProductDetailSingleFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/product_detail_fragment_margin_left"
+                android:layout_marginStart="@dimen/product_detail_fragment_margin_left"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/product_list_left_text"
+                android:textSize="11sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_home"/>
+
+            <TextView
+                android:id="@+id/txtViewAddress_ContentBottomProductDetailSingleFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/product_detail_fragment_margin_left"
+                android:layout_marginStart="@dimen/product_detail_fragment_margin_left"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.4"
+                android:text=""
+                android:textColor="@color/product_list_left_text"
+                android:textSize="11sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtViewSeeInMap_ContentBottomProductDetailSingleFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:text="@string/txt_view_view_in_map_product_detail_fragment_text"
+            android:textColor="@color/tab_layout_default_green_background"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_detail_fragment_fake_view_bottom_height"
+        android:background="@android:color/transparent"/>
+
+</LinearLayout>

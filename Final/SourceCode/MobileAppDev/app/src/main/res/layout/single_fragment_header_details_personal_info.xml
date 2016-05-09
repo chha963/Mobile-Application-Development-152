@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayoutEdit_HeaderDetailsPersonalInfo"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/tab_layout_default_green_background">
+
+        <ImageView
+            android:id="@+id/imageViewEditIcon_HeaderDetailsPersonalInfo"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pencil"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAddress_HeaderDetailsPersonalInfo"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/frameLayoutEdit_HeaderDetailsPersonalInfo"
+        android:layout_toStartOf="@+id/frameLayoutEdit_HeaderDetailsPersonalInfo"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtViewTitleAddress_HeaderDetailsPersonalInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐỊA CHỈ"
+            android:textSize="9sp"/>
+
+        <TextView
+            android:id="@+id/txtViewSeeInMap_HeaderDetailsPersonalInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_view_view_in_map_product_detail_fragment_text"
+            android:textColor="@color/tab_layout_default_green_background"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPhoneNumber_HeaderDetailsPersonalInfo"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/linearLayoutAddress_HeaderDetailsPersonalInfo"
+        android:layout_toStartOf="@+id/linearLayoutAddress_HeaderDetailsPersonalInfo"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtViewTitlePhoneNumber_HeaderDetailsPersonalInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SỐ ĐIỆN THOẠI"
+            android:textSize="9sp"/>
+
+        <TextView
+            android:id="@+id/txtViewPhoneNumber_HeaderDetailsPersonalInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="090 375 9354"
+            android:textColor="@color/tab_layout_default_green_background"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

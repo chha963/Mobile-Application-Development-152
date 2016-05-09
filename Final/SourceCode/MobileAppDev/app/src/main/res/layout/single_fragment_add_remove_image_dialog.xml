@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:baselineAligned="false"
+              android:orientation="horizontal"
+              android:paddingBottom="24dp"
+              android:paddingEnd="20dp"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+              android:paddingStart="20dp"
+              android:paddingTop="24dp"
+              android:weightSum="2">
+
+    <RelativeLayout
+        android:id="@+id/uploadImageLayout_AddRemoveImageDialogSingleFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/uploadImageView_AddRemoveImageDialogSingleFragment"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_add_image_post_product"/>
+
+        <TextView
+            android:id="@+id/txtViewUploadImage_AddRemoveImageDialogSingleFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/uploadImageView_AddRemoveImageDialogSingleFragment"
+            android:layout_toRightOf="@id/uploadImageView_AddRemoveImageDialogSingleFragment"
+            android:text="Upload ảnh mới"
+            android:textColor="@color/text_hint_color"
+            android:textSize="11.5sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/removeImageLayout_AddRemoveImageDialogSingleFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/removeImageView_AddRemoveImageDialogSingleFragment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_remove_image_post_product"/>
+
+        <TextView
+            android:id="@+id/txtViewRemoveImage_AddRemoveImageDialogSingleFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/removeImageView_AddRemoveImageDialogSingleFragment"
+            android:layout_toRightOf="@id/removeImageView_AddRemoveImageDialogSingleFragment"
+            android:text="Xóa ảnh"
+            android:textColor="@color/text_hint_color"
+            android:textSize="11.5sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

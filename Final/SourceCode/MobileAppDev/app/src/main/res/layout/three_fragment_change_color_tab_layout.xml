@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/scrollView_ThreeTabLayoutChangeColorFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fake_view_height_three_tab_layout"
+                android:minHeight="@dimen/fake_view_height_three_tab_layout"/>
+
+            <FrameLayout
+                android:id="@+id/contentBotLayout_ThreeTabLayoutChangeColorFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutFeatureBottom_ThreeTabLayoutChangeColorFragment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tab_layout_default_green_background"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/imageViewFeatureBottom_ThreeTabLayoutChangeColorTabFragment"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_plus_icon"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flexibleHeaderLayout_ThreeTabLayoutChangeColorFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/headerFirstTopLayout_ThreeTabLayoutChangeColorFragment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_image_personal_info_fragment_height">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/headerSecondTop_ThreeTabLayoutChangeColorFragment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/headerFirstTopLayout_ThreeTabLayoutChangeColorFragment">
+            </FrameLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayoutWidget_ThreeTabLayoutChangeColorFragment"
+                style="@style/MyCustomTabLayout_PersonalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_layout_height_personal_info"
+                android:layout_below="@+id/headerSecondTop_ThreeTabLayoutChangeColorFragment"
+                android:background="@color/tab_layout_default_green_background"
+                app:tabGravity="fill"
+                app:tabMode="fixed"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_layout_shadow_below_height"
+                android:layout_below="@+id/tabLayoutWidget_ThreeTabLayoutChangeColorFragment"
+                android:background="@drawable/shadow"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewAvatar_ThreeTabLayoutChangeColorFragment"
+                android:layout_width="@dimen/product_detail_fragment_avatar_image_size"
+                android:layout_height="@dimen/product_detail_fragment_avatar_image_size"
+                android:layout_above="@+id/headerSecondTop_ThreeTabLayoutChangeColorFragment"
+                android:layout_marginBottom="-50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

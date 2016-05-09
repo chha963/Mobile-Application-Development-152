@@ -1,0 +1,26 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/tab_layout_default_green_background</item> <!-- md_light_blue_500 -->
+        <item name="colorPrimaryDark">@color/tab_layout_default_green_background</item> <!-- md_light_blue_700 -->
+        <item name="colorAccent">#E91E63</item> <!-- md_pink_500 -->
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme.DarkToolbar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/tab_layout_default_green_background</item> <!-- md_light_blue_500 -->
+        <item name="colorPrimaryDark">@color/tab_layout_default_green_background</item> <!-- md_light_blue_700 -->
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="colorAccent">#E91E63</item> <!-- md_pink_500 -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/edit_personal_info_fragment_horizontal_margin"
+    android:layout_marginLeft="@dimen/edit_personal_info_fragment_horizontal_margin"
+    android:layout_marginRight="@dimen/edit_personal_info_fragment_horizontal_margin"
+    android:layout_marginStart="@dimen/edit_personal_info_fragment_horizontal_margin"
+    android:layout_marginTop="@dimen/edit_personal_info_fragment_vertical_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/basicInfoTitleLayout_ContentBotSignUpSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_personal_info_fragment_title_edit_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/basicInfoTitleTextView_ContentBotEditPersonalInfoSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/txt_view_basic_info_title_edit_personal_info"
+            android:textColor="@color/tab_layout_default_green_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailLayout_ContentBotEditPersonalInfoSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/edit_personal_info_fragment_edit_text_height"
+            android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+            android:background="@color/edit_personal_info_edit_text_background">
+
+            <ImageView
+                android:id="@+id/emailImageView_ContentBotEditPersonalInfoSingleFragment"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_email"/>
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/emailEditText_ContentBotEditPersonalInfoSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:background="@color/edit_personal_info_edit_text_background"
+            android:gravity="center_vertical"
+            android:hint="@string/edit_txt_email_hint_sign_up"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/edit_personal_info_edit_text_hint"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phoneNumberLayout_ContentBotEditPersonalInfoSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/edit_personal_info_fragment_edit_text_height"
+            android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+            android:background="@color/edit_personal_info_edit_text_background">
+
+            <ImageView
+                android:id="@+id/phoneNumberImageView_ContentBotEditPersonalInfoSingleFragment"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_phone_number"/>
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/phoneNumberEditText_ContentBotEditPersonalInfoSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:background="@color/edit_personal_info_edit_text_background"
+            android:gravity="center_vertical"
+            android:hint="@string/edit_txt_phone_number_hint_sign_up"
+            android:inputType="phone"
+            android:paddingEnd="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/edit_personal_info_edit_text_hint"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/changePasswordTitleLayout_ContentBotEditPersonalInfoSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_personal_info_fragment_title_edit_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/changePasswordTitleTextView_ContentBotEditPersonalInfoSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/txt_view_change_password_title_edit_personal_info"
+            android:textColor="@color/tab_layout_default_green_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/oldPasswordLayout_ContentBotEditPersonalInfoSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/edit_personal_info_fragment_edit_text_height"
+            android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+            android:background="@color/edit_personal_info_edit_text_background">
+
+            <ImageView
+                android:id="@+id/oldPasswordImageView_ContentBotEditPersonalInfoSingleFragment"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_password_sign_in"/>
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/oldPasswordEditText_ContentBotEditPersonalInfoSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:background="@color/edit_personal_info_edit_text_background"
+            android:gravity="center_vertical"
+            android:hint="@string/edit_txt_old_password_hint_edit_personal_info"
+            android:inputType="textPassword"
+            android:paddingEnd="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/edit_personal_info_edit_text_hint"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/newPasswordLayout_ContentBotEditPersonalInfoSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/edit_personal_info_fragment_edit_text_height"
+            android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+            android:background="@color/edit_personal_info_edit_text_background">
+
+            <ImageView
+                android:id="@+id/newPasswordImageView_ContentBotEditPersonalInfoSingleFragment"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_password_sign_in"/>
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/newPasswordEditText_ContentBotEditPersonalInfoSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:background="@color/edit_personal_info_edit_text_background"
+            android:gravity="center_vertical"
+            android:hint="@string/edit_txt_new_password_hint_edit_personal_info"
+            android:inputType="textPassword"
+            android:paddingEnd="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/edit_personal_info_edit_text_hint"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reNewPasswordLayout_ContentBotEditPersonalInfoSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/edit_personal_info_fragment_edit_text_height"
+            android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+            android:background="@color/edit_personal_info_edit_text_background">
+
+            <ImageView
+                android:id="@+id/reNewPasswordImageView_ContentBotEditPersonalInfoSingleFragment"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_password_sign_in"/>
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/reNewPasswordEditText_ContentBotEditPersonalInfoSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:background="@color/edit_personal_info_edit_text_background"
+            android:gravity="center_vertical"
+            android:hint="@string/edit_txt_re_new_password_hint_edit_personal_info"
+            android:inputType="textPassword"
+            android:paddingEnd="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/edit_personal_info_edit_text_hint"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addressTitleLayout_ContentBotEditPersonalInfoSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_personal_info_fragment_title_edit_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addressTitleTextView_ContentBotEditPersonalInfoSingleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/txt_view_address_title_sign_up"
+            android:textColor="@color/tab_layout_default_green_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addressStreetWardLayout_ContentBotEditPersonalInfoSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/edit_personal_info_fragment_edit_text_height"
+            android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+            android:background="@color/edit_personal_info_edit_text_background">
+
+            <ImageView
+                android:id="@+id/addressStreetWardImageView_ContentBotEditPersonalInfoSingleFragment"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_address"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/addressStreetEditText_ContentBotEditPersonalInfoSingleFragment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1.8"
+                android:background="@color/edit_personal_info_edit_text_background"
+                android:gravity="center_vertical"
+                android:hint="@string/edit_txt_address_street_hint_sign_up"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/edit_personal_info_edit_text_hint"
+                android:textSize="12sp"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2">
+
+                <Spinner
+                    android:id="@+id/addressWardSpinner_ContentBotEditPersonalInfoSingleFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@color/edit_personal_info_edit_text_background"
+                    android:cursorVisible="false"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_arrow_down"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addressDistrictProvinceCityLayout_ContentBotEditPersonalInfoSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+            <Spinner
+                android:id="@+id/addressDistrictSpinner_ContentBotEditPersonalInfoSingleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/edit_personal_info_edit_text_background"
+                android:cursorVisible="false"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_arrow_down"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <Spinner
+                android:id="@+id/addressProvinceCitySpinner_ContentBotEditPersonalInfoSingleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/edit_personal_info_edit_text_background"
+                android:cursorVisible="false"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_arrow_down"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEditInfo_ContentBotEditPersonalInfoSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_personal_info_fragment_edit_text_height"
+        android:background="@drawable/gradient_btn_sign_in"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:hint="@string/btn_edit_personal_info"
+        android:textColorHint="@color/white"/>
+
+</LinearLayout>

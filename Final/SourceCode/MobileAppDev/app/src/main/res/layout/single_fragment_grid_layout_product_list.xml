@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:keepScreenOn="false"
+              android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp">
+
+        <ImageView
+            android:id="@+id/imageViewDownArrowSort_GridLayoutProductListSingleFragment"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_arrow_down"/>
+
+        <Spinner
+            android:id="@+id/sortSpinner_GridLayoutProductListSingleFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_toLeftOf="@id/imageViewDownArrowSort_GridLayoutProductListSingleFragment"
+            android:layout_toStartOf="@id/imageViewDownArrowSort_GridLayoutProductListSingleFragment"
+            android:background="@android:color/transparent"
+            android:cursorVisible="false"
+            android:gravity="center_vertical|end"
+            android:singleLine="true"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewVertical_ProductListGridLayoutSingleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"/>
+
+</LinearLayout>

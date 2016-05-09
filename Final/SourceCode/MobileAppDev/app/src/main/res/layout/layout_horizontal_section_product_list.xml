@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:background="?android:selectableItemBackground"
+        android:paddingBottom="16dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/txtViewTypeProduct_TypeProductList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="top"
+            android:paddingEnd="0dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:paddingStart="16dp"
+            android:text="Mua"
+            android:textColor="@color/product_list_left_text"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/txtViewMore_TypeProductList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="top"
+            android:paddingEnd="8dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:paddingStart="0dp"
+            android:text="Xem thêm"
+            android:textColor="@color/holo_green_dark"/>
+
+    </RelativeLayout>
+
+    <com.cse.hcmut.mobileappdev.base.widgets.recyclerview.MySnappyRecyclerView
+        android:id="@+id/recyclerViewHorizontal_TypeProductList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"/>
+
+</LinearLayout>

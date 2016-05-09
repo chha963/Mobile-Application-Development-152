@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">@color/tab_layout_default_green_background</color>
+    <color name="colorPrimaryDark">@color/tab_layout_default_green_background</color>
+    <color name="colorAccent">#E91E63</color>
+    <color name="colorGreen">#00CC00</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_green_dark">@android:color/holo_green_dark</color>
+
+    <color name="menu_item_selected">@color/md_grey_200</color>
+
+    <color name="list_background_pressed_color">#992416</color>
+    <color name="text_hint_color">#808080</color>
+
+    <color name="my_material_drawer_primary_text">#231e1e</color>
+    <color name="my_material_drawer_section_text">#ffffff</color>
+
+    <color name="my_material_drawer_section_background">#3f3f3f</color>
+
+    <color name="background">@color/md_grey_100</color>
+
+    <color name="capsule_button_background">@color/tab_layout_default_green_background</color>
+
+    <color name="product_list_left_text">#303e3e</color>
+
+    <color name="tab_layout_default_green_background">#699d38</color>
+    <color name="tab_layout_another_blue_background">#039be6</color>
+    <color name="tab_layout_another_pink_background">#ee2b74</color>
+    <color name="tab_layout_text">#ffffff</color>
+
+    <color name="header_main_fragment_description_text">#c8c6bb</color>
+    <color name="header_main_fragment_price_text">#94cc4a</color>
+
+    <color name="content_main_fragment_name_product">#4c5858</color>
+    <color name="content_main_fragment_description_product">#b6b6b6</color>
+    <color name="content_main_fragment_price_product">#9bbc7d</color>
+
+    <color name="product_detail_button_call_default">@color/tab_layout_default_green_background</color>
+    <color name="product_detail_button_call_another">@color/tab_layout_another_blue_background</color>
+    <color name="bookmark_product_detail_button_add_default">#008f82</color>
+
+    <color name="advance_search_range_bar_unselected_range_color">#9e9e9e</color>
+    <color name="advance_search_default_background">@color/tab_layout_default_green_background</color>
+    <color name="advance_search_another_background">#53dde2</color>
+
+    <color name="sign_in_edit_text_background">#70afb9b9</color>
+    <color name="sign_in_edit_text_hint">#AAffffff</color>
+    <color name="sign_in_button_background_side">@color/tab_layout_default_green_background</color>
+    <color name="sign_in_button_background_center">#95e23b</color>
+
+    <color name="sign_up_edit_text_background">#1A808080</color>
+    <color name="sign_up_edit_text_hint">#90808080</color>
+
+    <color name="edit_personal_info_edit_text_background">#1A808080</color>
+    <color name="edit_personal_info_edit_text_hint">#90808080</color>
+
+    <color name="personal_info_empty_place_holder">#bbbbbb</color>
+    <color name="personal_info_card_empty_place_holder">@color/personal_info_empty_place_holder</color>
+    <color name="personal_info_text_and_icon_empty_place_holder">#a5a5a5a5</color>
+
+    <color name="post_product_background_header_top">#A0dddddd</color>
+    <color name="post_product_text_and_icon_header_top">#A0000000</color>
+    <color name="post_product_edit_text_hint">#808080</color>
+    <color name="post_product_empty_place_holder">#999999</color>
+    <color name="post_product_card_empty_place_holder">@color/post_product_empty_place_holder</color>
+
+    <color name="post_product_line_content">#dddddd</color>
+
+    <color name="icon_sign_up">#979696</color>
+    <color name="icon_forgot_password">#979696</color>
+    <color name="icon_edit_personal_info">#979696</color>
+
+    <color tools:override="true" name="ucrop_color_toolbar_widget">@color/white</color>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Custom spinner item layout -->
+<TextView
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerItemStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:paddingEnd="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingStart="12dp"
+    android:singleLine="true"
+    android:text="hint"
+    android:textColor="@color/sign_up_edit_text_hint"
+    android:textSize="12sp"
+    />

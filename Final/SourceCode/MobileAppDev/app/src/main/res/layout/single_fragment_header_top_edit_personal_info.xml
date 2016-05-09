@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/toolbar_height"
+              android:background="@color/colorPrimary"
+              android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/previousFrameLayout_SingleFragmentHeaderTopEditPersonalInfo"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/previousImageView_SingleFragmentHeaderTopEditPersonalInfo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back_navigation"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/titleTextView_SingleFragmentHeaderTopEditPersonalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/txt_view_title_edit_personal_info"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+</LinearLayout>
