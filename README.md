@@ -30,7 +30,7 @@ Current Area Support: Ho Chi Minh City, Viet Nam.
 <img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/7_zpsqnzxvakj.png" width="212">
 
 ### Environment
-* Client-side: Android 
+* Client-side: Android (Tested on API 19 & 22) 
 * Server-side: Hostinger.vn 
 * Database: MySQL 
 * Framework: Laravel 
