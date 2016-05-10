@@ -15,7 +15,7 @@ See details in /Exercises
 
 # Project
 ### Project Name: GoVi App
-This application uses for who want to trade items, likes ChoTot Application.</br>
+This application uses for who wants to trade items, likes ChoTot Application.</br>
 Current Area Support: Ho Chi Minh City, Viet Nam.
 
 ### Preview
@@ -29,13 +29,13 @@ Current Area Support: Ho Chi Minh City, Viet Nam.
 <img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/6_zpslwzoaevo.png" width="212">
 <img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/7_zpsqnzxvakj.png" width="212">
 
-### Environment
-* Client-side: Android (Tested on API 19 & 22) 
+### Environments
+* Client-side: Android (Tested on API 19 & 22) with Android Studio 2.1
 * Server-side: Hostinger.vn 
 * Database: MySQL 
 * Framework: Laravel 
 
-### History Version
+### History Versions
 
 #### &nbsp; 1.0
 * Web-Services: SignIn & SignUp
