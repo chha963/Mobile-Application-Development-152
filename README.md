@@ -19,8 +19,8 @@ This application uses for who wants to trade items, likes ChoTot Application.</b
 Current Area Support: Ho Chi Minh City, Viet Nam.
 
 ### Preview
-<img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/0_zpsyty50f6k.png" width="212">
-<img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/1_zpspaxbfhlp.png" width="212">
+![Sign In](http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/0_zpsyty50f6k.png" width="212")
+![Home](img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/1_zpspaxbfhlp.png" width="212")
 <img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/3_zpsnjgkduyi.png" width="212">
 <img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/4_zpsvkou5p2p.png" width="212">
 
