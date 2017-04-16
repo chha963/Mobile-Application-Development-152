@@ -21,10 +21,7 @@ Current Area Support: Ho Chi Minh City, Viet Nam.
 ### Preview
 <img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/0_zpsyty50f6k.png" width="212"> <img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/1_zpspaxbfhlp.png" width="212"> <img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/3_zpsnjgkduyi.png" width="212"> <img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/4_zpsvkou5p2p.png" width="212">
 
-<img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/4_zps43ptzsvw.png" width="212">
-<img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/2_zps8xdgfk36.png" width="212">
-<img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/6_zpslwzoaevo.png" width="212">
-<img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/7_zpsqnzxvakj.png" width="212">
+<img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/4_zps43ptzsvw.png" width="212"> <img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/2_zps8xdgfk36.png" width="212"> <img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/6_zpslwzoaevo.png" width="212"> <img src="http://i1380.photobucket.com/albums/ah166/nhudinh2103/preview/7_zpsqnzxvakj.png" width="212">
 
 ### Environments
 * Client-side: Android (Tested on API 19 & 22) with Android Studio 2.1
